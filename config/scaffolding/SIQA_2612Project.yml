@@ -11,7 +11,11 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
 services:
-- serviceName: project.siqa_2612.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
+- serviceName: project.siqa_2612.integrations:testAdap
+  packages:
+  - name: SIQA_2612Project
+    version: "1.0"
+- serviceName: project.siqa_2612.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:test
   packages:
   - name: SIQA_2612Project
     version: "1.0"
